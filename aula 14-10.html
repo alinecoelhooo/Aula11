@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>POO</title>
+
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend> DADOS PARA A CONTA CORRENTE</legend>
+      <div>
+     <label for="txtVlCorrente"> Valor Para Conta Corrente: </label>
+     <input type="text" name="" id="txtVlCorrente">
+     </div>
+     <div>
+         <button onclick="cc.depositar(parseInt(document.getElementById('txtVlCorrente').value))">Depositar</button>
+         <button onclick="cc.sacar(parseInt(document.getElementById('txtVlCorrente').value))">Sacar</button>
+         <button onclick="alert(cc.getSaldo())">Ver Saldo</button>
+      </div>
+      </fieldset>
+      </div>
+      <div>
+        <fieldset>
+            <legend> DADOS PARA A CONTA POUPANÇA</legend>
+            <div>
+               <label for="txtVlPoupanca">Valor para a Conta Poupança:</label>
+                <input type="text" name="" id="txtVlPoupanca">
+            </div>
+            <div>
+                <button onclick="cp.depositar(parseInt(document.getElementById('txtVlPoupanca').value))">Depositar</button>
+                <button onclick="cp.sacar(parseInt(document.getElementById('txtVlPoupanca').value))">Sacar</button>
+                <button onclick="alert(cp.getSaldo())">Ver Saldo</button>    
+            </div>  
+         </fieldset>
+      </div>
+
+</body>
+</html>
